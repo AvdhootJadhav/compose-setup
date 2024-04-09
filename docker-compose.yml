@@ -1,0 +1,11 @@
+services:
+  compose:
+    container_name: compose
+    build:
+      dockerfile: Dockerfile
+    image: compose-demo:latest
+    ports:
+      - "8080:8080"
+
+networks:
+  default:
